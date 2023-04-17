@@ -19,4 +19,8 @@ class CurrenciesController < ApplicationController
     @from_symbol = params.fetch("from_currency")
   render ({ :template => "currency_templates/step_two.html.erb"})
   end
+
+  def third_currency
+  render ({ :template => "currency_templates/step_three.html.erb"})
+  end 
 end
